@@ -1,0 +1,11 @@
+prompt: |
+  Analyze the provided academic answer sheet. 
+  Extract the content for each question into a structured JSON format. 
+  Each question should have:
+  - 'text': The written text.
+  - 'equations': A list of step-by-step equations if present.
+  - 'tables': Any tabular data.
+  - 'bullets': Any bulleted or numbered lists.
+  - 'diagram': A placeholder if a diagram is detected for that question.
+  
+  Format the output as a valid JSON object where keys are question numbers (e.g., "Q1", "Q2a").

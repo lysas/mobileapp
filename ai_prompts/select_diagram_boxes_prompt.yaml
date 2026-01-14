@@ -1,0 +1,8 @@
+prompt: |
+  Below is an image with numbered green boxes overlays on detected drawings/diagrams.
+  Context of questions needing diagrams:
+  {question_context}
+  
+  For each question mentioned in the context, identify which box number(s) (1, 2, 3...) correspond to the diagram for that question.
+  Return a JSON object mapping Question ID to a list of box IDs.
+  Example: {{"Q3": [1, 4], "Q4": [2]}}
